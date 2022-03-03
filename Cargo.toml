@@ -22,3 +22,9 @@ path = "examples/3d/3d_basic.rs"
 name = "bevy_easings_basic"
 path = "examples/beby_easings/bevy_easings_basic.rs"
 # endregion
+
+# region bevy_rapier examples
+[[example]]
+name = "bevy_rapier3d_basic"
+path = "examples/bevy_rapier/3d/bevy_rapier3d_basic.rs"
+# endregion

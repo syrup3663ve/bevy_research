@@ -1,3 +1,4 @@
+pub mod bevy_rapier;
 pub mod pbr;
 
 use bevy::prelude::*;
