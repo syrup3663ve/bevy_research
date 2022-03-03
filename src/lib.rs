@@ -2,14 +2,15 @@ pub mod bevy_rapier;
 pub mod pbr;
 
 use bevy::prelude::*;
+use bevy_editor_pls::prelude::*;
 
 pub fn setup_default_plugin(app: &mut App) {
-    app.add_plugins(DefaultPlugins);
+    app.add_plugins(DefaultPlugins).add_plugin(EditorPlugin);
 }
 
 pub fn setup_2d(app: &mut App) {
-    app.add_plugins(DefaultPlugins)
-        .add_startup_system(setup_2d_cameras);
+    setup_default_plugin(app);
+    app.add_startup_system(setup_2d_cameras);
 }
 
 fn setup_2d_cameras(mut commands: Commands) {
@@ -18,8 +19,8 @@ fn setup_2d_cameras(mut commands: Commands) {
 }
 
 pub fn setup_3d(app: &mut App) {
-    app.add_plugins(DefaultPlugins)
-        .add_startup_system(setup_3d_cameras)
+    setup_default_plugin(app);
+    app.add_startup_system(setup_3d_cameras)
         .add_startup_system(setup_directional_light);
 }
 
