@@ -33,3 +33,9 @@ path = "examples/beby_easings/bevy_easings_basic.rs"
 name = "bevy_rapier3d_basic"
 path = "examples/bevy_rapier/3d/bevy_rapier3d_basic.rs"
 # endregion
+
+# region ecs-systems examples
+[[example]]
+name = "generic_system"
+path = "examples/ecs/systems/generic_system.rs"
+# endregion
