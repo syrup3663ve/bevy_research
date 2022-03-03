@@ -16,6 +16,10 @@ bevy_rapier3d = "0.12.1" # 物理エンジン
 [[example]]
 name = "3d_basic"
 path = "examples/3d/3d_basic.rs"
+
+[[example]]
+name = "load_model"
+path = "examples/3d/load_model.rs"
 # endregion
 
 # region bevy_easings examples
