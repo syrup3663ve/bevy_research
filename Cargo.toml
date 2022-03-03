@@ -10,3 +10,15 @@ bevy = "0.6.1" # ゲームエンジン
 bevy_easings = "0.6.0" # Tween
 bevy_ecs_ldtk = "0.2.0" # タイルマップ
 bevy_rapier3d = "0.12.1" # 物理エンジン
+
+# region 3D examples
+[[example]]
+name = "3d_basic"
+path = "examples/3d/3d_basic.rs"
+# endregion
+
+# region bevy_easings examples
+[[example]]
+name = "bevy_easings_basic"
+path = "examples/beby_easings/bevy_easings_basic.rs"
+# endregion
