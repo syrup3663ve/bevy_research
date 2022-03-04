@@ -3,7 +3,7 @@ use bevy::prelude::*;
 
 use crate::shape::Plane;
 
-pub fn spawn_pbr(
+pub fn spawn_cube(
     mut commands: Commands,
     mut meshes: ResMut<Assets<Mesh>>,
     mut materials: ResMut<Assets<StandardMaterial>>,
